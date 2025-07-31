@@ -7,6 +7,7 @@ import android.net.NetworkCapabilities;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import java.io.IOException;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
@@ -25,6 +26,7 @@ import com.example.bus.ui.feedback.FeedbackFragment;
 import com.example.bus.ui.home.HomeFragment;
 import com.example.bus.ui.login.LoginActivity;
 import com.example.bus.ui.login.SignupActivity;
+import com.example.bus.ui.prediction.BusTimingPredictor;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -46,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                 .setPersistenceEnabled(true) // ❌ Disable offline mode
                 .build();
+        // Call prediction
+        // Call the prediction function
+//BusTimingPredictor predictor = new BusTimingPredictor(this);
+  //      predictor.runPrediction();
+
         FirebaseFirestore.getInstance().setFirestoreSettings(settings);
         FirebaseApp.initializeApp(this);
         firestore = FirebaseFirestore.getInstance();
@@ -56,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
         // 🔹 Initialize Firestore
         firestore = FirebaseFirestore.getInstance();
-        fetchFirestoreData();
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home,
                 R.id.bus_timing,
@@ -65,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_settings,
                 R.id.search_bus_online
         ).setOpenableLayout(drawer).build();
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
@@ -103,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // ✅ Fetch Firestore Data
-        fetchFirestoreData();
     }
 
 
@@ -181,29 +187,5 @@ public class MainActivity extends AppCompatActivity {
         executorService.shutdown();
     }
 
-    // ✅ Fetch Firestore Data
-    private void fetchFirestoreData() {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("districts").get().addOnSuccessListener(districts -> {
-            for (DocumentSnapshot districtDoc : districts) {
-                String districtName = districtDoc.getString("name");
-                Log.d(TAG, "📍 District: " + districtName);
-            }
-        });
-
-        db.collection("taluks").get().addOnSuccessListener(taluks -> {
-            for (DocumentSnapshot talukDoc : taluks) {
-                String talukName = talukDoc.getString("name");
-                Log.d(TAG, "   ↳ 🏢 Taluk: " + talukName);
-            }
-        });
-
-        db.collection("bus_stands").get().addOnSuccessListener(busStands -> {
-            for (DocumentSnapshot busStandDoc : busStands) {
-                String busStandName = busStandDoc.getString("name");
-                Log.d(TAG, "       ↳ 🚏 Bus Stand: " + busStandName);
-            }
-        });
-    }
 }

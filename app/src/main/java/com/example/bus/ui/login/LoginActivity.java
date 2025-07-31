@@ -27,17 +27,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Check if user is already logged in
-        SharedPreferences preferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
-        boolean isLoggedIn = preferences.getBoolean("isLoggedIn", false);
-
-        if (isLoggedIn) {
-            // Redirect to MainActivity
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-            finish(); // Close LoginActivity
-            return;
-        }
-
         setContentView(R.layout.activity_login);
         loginUsername = findViewById(R.id.login_username);
         loginPassword = findViewById(R.id.login_password);

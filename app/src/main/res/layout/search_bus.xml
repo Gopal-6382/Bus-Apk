@@ -91,35 +91,35 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
-            android:background="@android:color/holo_blue_bright" />
+            android:background="@android:color/holo_blue_dark" />
 
         <Spinner
             android:id="@+id/spinner_taluk"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
-            android:background="@android:color/holo_blue_bright" />
+            android:background="@android:color/holo_blue_dark" />
 
         <Spinner
             android:id="@+id/spinner_bus_stand"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
-            android:background="@android:color/holo_blue_bright" />
+            android:background="@android:color/holo_blue_dark" />
 
         <Spinner
             android:id="@+id/spinner_route"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
-            android:background="@android:color/holo_blue_bright" />
+            android:background="@android:color/holo_blue_dark" />
 
         <Spinner
             android:id="@+id/spinner_bus"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="12dp"
-            android:background="@android:color/holo_blue_bright" />
+            android:background="@android:color/holo_blue_dark" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_show_bus_details"
@@ -129,37 +129,6 @@
             android:textSize="16sp"
             android:layout_marginBottom="12dp"
             app:backgroundTint="@android:color/holo_blue_dark" />
-
-        <!-- Search History -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Search History"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:padding="16dp"
-            android:background="@android:color/holo_blue_dark" />
-
-        <TextView
-            android:id="@+id/busName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/source"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/destination"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
 
     </LinearLayout>
 </ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- General Navigation Group -->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"
+            android:orderInCategory="1"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+
+        <item
+            android:id="@+id/search_bus"
+            android:icon="@drawable/ic_search"
+            android:title="@string/search_bus"
+            android:orderInCategory="2"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+
+        <item
+            android:id="@+id/bus_timing"
+            android:icon="@drawable/ic_bus"
+            android:title="@string/bus_timing"
+            android:orderInCategory="3"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedback"
+            android:orderInCategory="5"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"
+            android:orderInCategory="4"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share"
+            android:orderInCategory="6"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+        <item
+            android:id="@+id/nav_add_account"
+            android:icon="@drawable/ic_add_account"
+            android:title="@string/add_account"
+            android:orderInCategory="7"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout"
+            android:orderInCategory="9"
+            android:background="@drawable/menu_item_border"
+            android:titleTextAppearance="@style/MenuItemTextStyle" />
+    </group>
+
+</menu>

@@ -1,0 +1,68 @@
+[versions]
+activityKtx = "1.10.0"
+activityKtxVersion = "1.8.2"
+agp = "8.9.1"
+firebaseAuth = "23.2.0"
+firebaseBom = "33.9.0"
+firebaseBomVersion = "32.7.0"
+firebaseCore = "21.1.1"
+firebaseFirestore = "25.1.2"
+googleFirebaseFirestore = "24.1.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lottie = "6.1.0"
+material = "1.12.0"
+constraintlayout = "2.2.0"
+lifecycleLivedataKtx = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"
+navigationFragment = "2.8.6"
+navigationUi = "2.8.6"
+firebaseCrashlytics = "19.4.0"
+googleGmsGoogleServices = "4.4.2"
+googleFirebaseCrashlytics = "3.0.3"
+playServicesAuth = "21.3.0"
+firebaseDatabase = "21.0.0"
+roomCommon = "2.6.1"
+roomRuntime = "2.6.1"
+roomCompiler = "2.6.1"
+navigationRuntimeAndroid = "2.9.1"
+navigationUiVersion = "2.9.1"
+
+[libraries]
+activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
+activity-ktx-v182 = { module = "androidx.activity:activity-ktx", version.ref = "activityKtxVersion" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-bom-v3270 = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
+firebase-core = { module = "com.google.firebase:firebase-core", version.ref = "firebaseCore" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestore" }
+firebase-firestore-v2412 = { module = "com.google.firebase:firebase-firestore", version.ref = "googleFirebaseFirestore" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebaseCrashlytics" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+navigation-runtime-android = { group = "androidx.navigation", name = "navigation-runtime-android", version.ref = "navigationRuntimeAndroid" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUiVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "googleFirebaseCrashlytics" }
+

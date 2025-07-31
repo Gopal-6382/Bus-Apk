@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="reset_button" type="id">Show detail</item>
+    <item name="email_input" type="id">Enter the email</item>
+</resources>

@@ -141,6 +141,6 @@ For any questions or concerns, please contact gopalkrishnanto@email.com
 
     <!-- Search History -->
     <string name="search_history" translatable="false">Search History</string>
-    <string name="search_online">Search Online</string>
+    <string name="search_online" translatable="false">Search Online</string>
 
 </resources>
