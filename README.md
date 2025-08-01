@@ -13,7 +13,7 @@ Java, Android Studio, Firebase, Google Maps API
 ## 📦 Usage
 Open project in Android Studio and run on emulator/device.
 
-📂 **Repository:** [https://github.com/Gopal-6382/Bus-Apk/tree/Bus-Codes](https://github.com/Gopal-6382/Bus-Apk)
+📂 **Repository:** [https://github.com/Gopal-6382/Bus-Apk/tree/Bus-Codes](https://github.com/Gopal-6382/Bus-Apk/tree/Bus_Codes)
 
 ---
 📅 Updated: August 01, 2025
